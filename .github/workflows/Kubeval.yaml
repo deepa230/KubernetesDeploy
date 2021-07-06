@@ -18,4 +18,4 @@ jobs:
         helmv3: 3.0.0
         command: |
           echo "Run kubeval"
-          kubeval -d config --strict --ignore-missing-schemas
+          kubeval -d Kubernetes --strict --ignore-missing-schemas
