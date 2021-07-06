@@ -3,7 +3,7 @@ data:
   host: db
   port: "8080"
 kind: ConfigMap
-metadata:
+meadata:
   creationTimestamp: "2020-03-21T08:49:30Z"
   name: db-config
   namespace: demo
