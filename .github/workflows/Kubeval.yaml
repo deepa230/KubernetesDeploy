@@ -1,6 +1,6 @@
 name: ValidateYaml
 
-on: [push]
+on: [pr]
 
 jobs:
   build:
