@@ -4,11 +4,6 @@ pipeline {
     PATH = "/usr/sbin:$PATH"
   }
     stages {
-        stage('Checkout SCM') {
-            steps {
-                git branch: 'main', credentialsId: 'Git', url: 'https://github.com/deepa230/KubernetesDeploy.git'
-            }
-        }
         stage('Helm Package Creation') {
             steps {
                 sh "helm create phpmyadmin"
