@@ -6,7 +6,6 @@ metadata:
   labels:
     app: phpmyadmin
   name: phpmyadmin
-  namespace: demo
   resourceVersion: "1761"
   selfLink: /apis/apps/v1/namespaces/demo/deployments/phpmyadmin
   uid: cb96eb41-1821-46e4-a44f-643d3fae3b09

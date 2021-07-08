@@ -5,7 +5,6 @@ metadata:
   labels:
     app: db
   name: db
-  namespace: demo
   resourceVersion: "11995"
   selfLink: /api/v1/namespaces/demo/services/db
   uid: 5d589bc2-064b-4bf4-8b7e-f996fc8f887c
