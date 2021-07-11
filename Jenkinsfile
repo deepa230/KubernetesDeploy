@@ -21,9 +21,9 @@ pipeline {
             steps {
                 sshagent(['Kubernetes']) {
                     sh '''
-                    scp -o StrictHostKeyChecking=no ./*.tgz ubuntu@13.233.130.95:/home/ubuntu
-                    scp -o StrictHostKeyChecking=no /home/ubuntu/linux-amd64/helm ubuntu@13.233.130.95:/home/ubuntu
-                    ssh -t ubuntu@13.233.130.95 /bin/bash << 'EOF' 
+                    scp -o StrictHostKeyChecking=no ./*.tgz ubuntu@15.207.87.30:/home/ubuntu
+                    scp -o StrictHostKeyChecking=no /home/ubuntu/linux-amd64/helm ubuntu@15.207.87.30:/home/ubuntu
+                    ssh -t ubuntu@15.207.87.30 /bin/bash << 'EOF' 
                     sudo mv ./helm /usr/local/bin/ 
                     sudo chmod +x /usr/local/bin/helm 
                     export PATH=/usr/local/bin/:$PATH
