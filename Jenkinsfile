@@ -6,10 +6,13 @@ pipeline {
     stages {
         stage('Helm Package Creation') {
             steps {
-                sh "helm create phpmyadmin"
-                sh "rm -rf ./phpmyadmin/templates/*"
-                sh "cp *.yaml ./phpmyadmin/templates/"
-                sh "helm package phpmyadmin"
+                sh '''
+                helm create phpmyadmin
+                rm -rf ./phpmyadmin/templates/*
+                cp *.yaml ./phpmyadmin/templates/
+                helm lint phpmyadmin/
+                helm package phpmyadmin
+                '''
             }
         }
         stage('Deploy to K8s') {
