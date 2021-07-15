@@ -6,6 +6,6 @@ one for phpmyadmin application and other one for mysql database
 
 phpmyadmin application is exposed to the outside world by a service of type Nodeport
 
-mysql database is exposed internally to phpmyadmin application by a  service of type clusterip
+MySQL database is exposed internally to phpmyadmin application by a  service of type clusterip
 
 There is secrets to sensitive information like password and config maps to store configuration data like hostnames and port value.
