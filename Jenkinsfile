@@ -11,6 +11,7 @@ pipeline {
                 rm -rf ./phpmyadmin/templates/*
                 cp *.yaml ./phpmyadmin/templates/
                 helm lint phpmyadmin/
+                helm template phpmyadmin
                 helm package phpmyadmin
                 '''
             }
